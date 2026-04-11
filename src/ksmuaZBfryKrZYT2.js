@@ -22251,7 +22251,7 @@ function q3() {
                             children: [
                                 x.jsx(MAIL_ICON, { className: "w-5 h-5" }),
                                 x.jsx("span", {
-                                    children: d ? "email copied ✓" : "contact@nguyendailoc"
+                                    children: d ? "email copied ✓" : "ndailoc02@gmail.com"
                                 })
                             ]
                         })
