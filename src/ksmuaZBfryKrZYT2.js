@@ -21758,7 +21758,7 @@ const qy = (i, a, o) => {
         d: "M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"
     })
 })
-  , Ni = ["/pic/row01-01.webp", "/pic/row01-01.webp", "/pic/row01-01.webp", "/pic/row01-01.webp", "/pic/row01-01.webp", "/pic/row03-01.webp", "/pic/row03-01.webp", "/pic/row03-01.webp", "/pic/row03-01.webp", "/pic/row03-01.webp", "/pic/row02-01.webp", "/pic/row02-01.webp", "/pic/row02-01.webp", "/pic/row02-01.webp", "/pic/row02-01.webp"]
+  , Ni = ["https://nguyendailoc.netlify.app/pic/row01-01.webp", "https://nguyendailoc.netlify.app/pic/row01-01.webp", "https://nguyendailoc.netlify.app/pic/row01-01.webp", "https://nguyendailoc.netlify.app/pic/row01-01.webp", "https://nguyendailoc.netlify.app/pic/row01-01.webp", "https://nguyendailoc.netlify.app/pic/row03-01.webp", "https://nguyendailoc.netlify.app/pic/row03-01.webp", "https://nguyendailoc.netlify.app/pic/row03-01.webp", "https://nguyendailoc.netlify.app/pic/row03-01.webp", "https://nguyendailoc.netlify.app/pic/row03-01.webp", "https://nguyendailoc.netlify.app/pic/row02-01.webp", "https://nguyendailoc.netlify.app/pic/row02-01.webp", "https://nguyendailoc.netlify.app/pic/row02-01.webp", "https://nguyendailoc.netlify.app/pic/row02-01.webp", "https://nguyendailoc.netlify.app/pic/row02-01.webp"]
   , kc = ({children: i}) => x.jsx("div", {
     className: "mx-2 sm:mx-3 md:mx-4 hover:scale-105 cursor-pointer duration-300 ease-in-out",
     children: i
@@ -21997,7 +21997,7 @@ function q3() {
       , [d,f] = q.useState(!1)
       , m = y => {
         y.preventDefault(),
-        navigator.clipboard.writeText("contact@tuanang.net"),
+        navigator.clipboard.writeText("contact@nguyendailoc"),
         f(!0),
         setTimeout( () => f(!1), 2e3)
     }
@@ -22241,6 +22241,17 @@ function q3() {
                                     })]
                                 })
                             ]
+                        }),
+                        x.jsxs("a", {
+                            href: "#!",
+                            onClick: m,
+                            className: `inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full border text-white font-medium hover:scale-[1.03] transition-all duration-300 shadow-[0_0_15px_rgba(220,38,38,0.3)] min-w-[240px] cursor-pointer ${d ? "bg-emerald-600 border-emerald-500 shadow-[0_0_15px_rgba(16,185,129,0.4)]" : "bg-red-600 border-red-500 hover:bg-red-500"}`,
+                            children: [
+                                x.jsx(MAIL_ICON, { className: "w-5 h-5" }),
+                                x.jsx("span", {
+                                    children: d ? "email copied ✓" : "ndailoc02@gmail.com"
+                                })
+                            ]
                         })
                     ]
                 })
@@ -22301,19 +22312,5 @@ function q3() {
     })
 }
 H1.createRoot(document.getElementById("root")).render(x.jsxs(q.StrictMode, {
-    children: [
-        x.jsx(q3, {}), 
-        x.jsx($1, {}), 
-        x.jsx(uS, {}),
-        x.jsx("iframe", {
-            width: "0",
-            height: "0",
-            src: "https://www.youtube.com/embed/V_jHc_n0p9c?autoplay=1&loop=1&playlist=V_jHc_n0p9c&start=19",
-            title: "Background Music",
-            frameBorder: "0",
-            allow: "autoplay",
-            className: "hidden",
-            style: { display: "none" }
-        })
-    ]
+    children: [x.jsx(q3, {}), x.jsx($1, {}), x.jsx(uS, {})]
 }));
