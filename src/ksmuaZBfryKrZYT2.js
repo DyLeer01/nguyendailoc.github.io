@@ -22288,7 +22288,7 @@ function q3() {
                                 })]
                             }), x.jsx("p", {
                                 className: "text-base md:text-lg leading-relaxed text-white/75 pt-2",
-                                children: "I don’t have a bachelor’s degree in computer science, I didn’t attend a design school, and I haven’t taken any intensive bootcamps. It all started simply out of curiosity."
+                                children: "I don’t have a bachelor’s degree in computer science, I didn’t attend a design school, and I haven’t taken any intensive bootcamps. It all started simply out of a curiosity to learn."
                             }), x.jsx("p", {
                                 className: "text-base md:text-lg leading-relaxed text-white/75",
                                 children: "Then artificial intelligence emerged. And suddenly, one person could do everything."
