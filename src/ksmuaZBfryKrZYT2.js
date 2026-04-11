@@ -21999,7 +21999,7 @@ function q3() {
       , [d,f] = q.useState(!1)
       , m = y => {
         y.preventDefault(),
-        navigator.clipboard.writeText("contact@nguyendailoc"),
+        navigator.clipboard.writeText("ndailoc02@gmail.com"),
         f(!0),
         setTimeout( () => f(!1), 2e3)
     }
@@ -22251,7 +22251,7 @@ function q3() {
                             children: [
                                 x.jsx(MAIL_ICON, { className: "w-5 h-5" }),
                                 x.jsx("span", {
-                                    children: d ? "email copied ✓" : "ndailoc02@gmail.com"
+                                    children: d ? "email copied ✓" : "contact@nguyendailoc"
                                 })
                             ]
                         })
