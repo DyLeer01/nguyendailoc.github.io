@@ -22187,7 +22187,7 @@ function q3() {
                         }),
                         x.jsx("p", {
                             className: "text-xl md:text-2xl text-white/80 mt-2 font-light",
-                            children: "Follow my journey"
+                            children: " "
                         })
                     ]
                 }),
