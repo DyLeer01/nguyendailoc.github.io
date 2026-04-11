@@ -22176,7 +22176,6 @@ function q3() {
         x.jsxs("div", {
             className: "relative z-10 flex-1 flex flex-col items-center justify-center text-center px-6 w-full max-w-5xl mx-auto py-20",
             children: [
-                // --- ĐOẠN MỚI THÊM VÀO ĐÂY ---
                 x.jsxs("div", {
                     className: "flex flex-col items-center mb-16",
                     children: [
@@ -22191,8 +22190,6 @@ function q3() {
                         })
                     ]
                 }),
-                // ----------------------------
-                
                 x.jsxs("div", {
                     className: "flex flex-wrap justify-center gap-4 md:gap-8 mb-20 w-full",
                     children: [
