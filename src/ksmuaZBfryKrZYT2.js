@@ -22181,7 +22181,7 @@ function q3() {
                     children: [
                         x.jsx("h2", {
                             className: "text-6xl md:text-8xl font-normal text-white mix-blend-overlay",
-                            style: { fontFamily: "'Imbue', serif" }, // Sử dụng font Imbue như các phần khác
+                            style: { fontFamily: "'Imbue', serif" },
                             children: "Connect"
                         }),
                         x.jsx("p", {
