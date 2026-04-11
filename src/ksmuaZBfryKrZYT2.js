@@ -21894,7 +21894,7 @@ function k3() {
 }
 const H3 = ({isReady: i, onComplete: a}) => {
     const [o,s] = q.useState(0)
-      , c = ["Vision", "Visuals", "Me!"]
+      , c = ["Nguyễn", "Đại", "Lộc"]
       , d = Math.min(Math.floor(o / 100 * 3), 2);
     return q.useEffect( () => {
         const f = setInterval( () => {
