@@ -21893,105 +21893,89 @@ function k3() {
     })
 }
 const H3 = ({isReady: i, onComplete: a}) => {
-    const [o,s] = q.useState(0)
-      , c = ["Nguyễn", "Đại", "Lộc"]
-      , d = Math.min(Math.floor(o / 100 * 3), 2);
-    return q.useEffect( () => {
-        const f = setInterval( () => {
+    const [o, s] = q.useState(0);
+
+    q.useEffect(() => {
+        const f = setInterval(() => {
             s(m => m < 99 || i && m < 100 ? m + 1 : m)
-        }
-        , 20);
-        return () => clearInterval(f)
-    }
-    , [i]),
-    q.useEffect( () => {
+        }, 20);
+        return () => clearInterval(f);
+    }, [i]);
+
+    q.useEffect(() => {
         if (i && o === 100) {
             const f = setTimeout(a, 800);
-            return () => clearTimeout(f)
+            return () => clearTimeout(f);
         }
-    }
-    , [i, o, a]),
-    x.jsxs(Da.div, {
-        initial: {
-            opacity: 1
-        },
-        exit: {
-            opacity: 0
-        },
-        transition: {
-            duration: .5,
-            ease: "easeInOut"
-        },
-        className: "fixed inset-0 z-[9999] bg-bg flex flex-col overflow-hidden",
-        children: [x.jsxs("div", {
-            className: "relative h-full w-full flex flex-col",
-            children: [x.jsx("div", {
-                className: "px-8 py-6 max-w-7xl mx-auto w-full",
-                children: x.jsxs(Da.div, {
-                    initial: {
-                        y: -20,
-                        opacity: 0
-                    },
-                    animate: {
-                        y: 0,
-                        opacity: 1
-                    },
-                    transition: {
-                        duration: .8,
-                        ease: "easeOut"
-                    },
-                    className: "text-3xl tracking-tight text-foreground font-display",
-                    children: ["DLER", x.jsx("sup", {
-                        className: "text-xs",
-                        children: "®"
-                    })]
+    }, [i, o, a]);
+
+    return x.jsxs(Da.div, {
+        initial: { opacity: 1 },
+        exit: { opacity: 0, scale: 1.05, filter: "blur(10px)" },
+        transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] },
+        className: "fixed inset-0 z-[9999] bg-[#050505] flex flex-col justify-center items-center overflow-hidden text-white",
+        children: [
+            x.jsx(Da.div, {
+                initial: { opacity: 0 },
+                animate: { opacity: 0.6 },
+                transition: { duration: 2 },
+                className: "absolute inset-0 bg-gradient-to-b from-black/10 via-black/50 to-[#000] pointer-events-none"
+            }),
+            x.jsxs("div", {
+                className: "relative z-10 flex flex-col items-center gap-3",
+                children: [
+                    x.jsx("div", {
+                        className: "overflow-hidden",
+                        children: x.jsx(Da.h1, {
+                            initial: { y: "100%", opacity: 0 },
+                            animate: { y: "0%", opacity: 1 },
+                            transition: { duration: 1, ease: [0.76, 0, 0.24, 1] },
+                            className: "text-6xl md:text-8xl lg:text-[10rem] tracking-[0.05em] font-light uppercase",
+                            style: { fontFamily: "'Imbue', serif" },
+                            children: "DLER"
+                        })
+                    }),
+                    x.jsx("div", {
+                        className: "overflow-hidden",
+                        children: x.jsx(Da.p, {
+                            initial: { y: "-100%", opacity: 0 },
+                            animate: { y: "0%", opacity: 1 },
+                            transition: { duration: 1, delay: 0.2, ease: [0.76, 0, 0.24, 1] },
+                            className: "text-xs md:text-sm tracking-[0.4em] text-white/50 uppercase",
+                            children: "NGUYỄN ĐẠI LỘC"
+                        })
+                    })
+                ]
+            }),
+            x.jsxs("div", {
+                className: "absolute bottom-12 w-full px-8 md:px-16 flex justify-between items-end",
+                children: [
+                    x.jsx(Da.span, {
+                        initial: { opacity: 0 },
+                        animate: { opacity: 1 },
+                        transition: { delay: 0.5 },
+                        className: "text-xs tracking-widest text-white/30 uppercase",
+                        children: "Loading..."
+                    }),
+                    x.jsxs("span", {
+                        className: "text-5xl md:text-7xl font-light tabular-nums leading-none text-white/90",
+                        style: { fontFamily: "'Imbue', serif" },
+                        children: [String(o).padStart(3, "0"), "%"]
+                    })
+                ]
+            }),
+            x.jsx("div", {
+                className: "absolute bottom-0 left-0 w-full h-[2px] bg-white/10",
+                children: x.jsx(Da.div, {
+                    className: "h-full bg-white origin-left",
+                    initial: { scaleX: 0 },
+                    animate: { scaleX: o / 100 },
+                    transition: { ease: "linear", duration: 0.1 }
                 })
-            }), x.jsx("div", {
-                className: "flex-1"
-            }), " ", x.jsx("div", {
-                className: "absolute inset-0 flex items-center justify-center pointer-events-none text-center",
-                children: x.jsx(Nv, {
-                    mode: "wait",
-                    children: x.jsx(Da.div, {
-                        initial: {
-                            y: 20,
-                            opacity: 0
-                        },
-                        animate: {
-                            y: 0,
-                            opacity: .8
-                        },
-                        exit: {
-                            y: -20,
-                            opacity: 0
-                        },
-                        transition: {
-                            duration: .4,
-                            ease: "easeOut"
-                        },
-                        className: "text-4xl md:text-6xl lg:text-7xl font-display italic text-text-primary/80",
-                        children: c[d]
-                    }, c[d])
-                })
-            }), x.jsx("div", {
-                className: "flex justify-end items-end",
-                children: x.jsx("div", {
-                    className: "text-6xl md:text-8xl lg:text-[10rem] font-display text-text-primary tabular-nums leading-none",
-                    children: String(o).padStart(3, "0")
-                })
-            })]
-        }), x.jsx("div", {
-            className: "absolute bottom-0 left-0 w-full h-[3px] bg-stroke/50",
-            children: x.jsx(Da.div, {
-                className: "h-full accent-gradient origin-left",
-                style: {
-                    scaleX: o / 100
-                }
             })
-        })]
-    })
-}
-;
+        ]
+    });
+};
 function q3() {
     const [i,a] = q.useState(!0)
       , [o,s] = q.useState(!1)
